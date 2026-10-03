@@ -348,3 +348,416 @@
       backdrop-filter: blur(15px);
       border-radius: 22px;
       padding: 35px;
+    }
+
+    .profile-card {
+      text-align: center;
+    }
+
+    .avatar {
+      width: 125px;
+      height: 125px;
+      margin: 0 auto 20px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3.2rem;
+      background: linear-gradient(145deg, #123c23, #07180d);
+      border: 2px solid var(--green);
+      box-shadow: 0 0 30px var(--green-glow);
+    }
+
+    .profile-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 6px;
+    }
+
+    .role {
+      color: var(--green);
+      font-weight: 700;
+      font-size: 0.9rem;
+    }
+
+    .profile-card p {
+      color: var(--muted);
+      margin-top: 18px;
+      line-height: 1.7;
+      font-size: 0.9rem;
+    }
+
+    .about-card h3 {
+      font-size: 1.6rem;
+      margin-bottom: 18px;
+    }
+
+    .about-card p {
+      color: var(--muted);
+      line-height: 1.8;
+      margin-bottom: 15px;
+    }
+
+    .about-list {
+      list-style: none;
+      margin-top: 25px;
+    }
+
+    .about-list li {
+      color: #d9f8e2;
+      margin: 12px 0;
+    }
+
+    .about-list li::first-letter {
+      color: var(--green);
+    }
+
+    /* Discord CTA */
+    .discord-section {
+      padding-top: 50px;
+    }
+
+    .discord-box {
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+      padding: 70px 30px;
+      border-radius: 25px;
+      border: 1px solid rgba(57, 255, 136, 0.3);
+      background:
+        linear-gradient(
+          135deg,
+          rgba(57,255,136,0.10),
+          rgba(6,17,11,0.7)
+        );
+      box-shadow: inset 0 0 80px rgba(57,255,136,0.025);
+    }
+
+    .discord-box h2 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      margin-bottom: 15px;
+    }
+
+    .discord-box p {
+      color: var(--muted);
+      margin-bottom: 28px;
+    }
+
+    /* Footer */
+    footer {
+      padding: 35px 6%;
+      border-top: 1px solid rgba(57,255,136,0.08);
+      text-align: center;
+      color: #6f8275;
+      font-size: 0.85rem;
+    }
+
+    footer span {
+      color: var(--green);
+    }
+
+    /* Mobile */
+    @media (max-width: 750px) {
+      nav {
+        padding: 15px 5%;
+      }
+
+      .nav-links a:not(.nav-discord) {
+        display: none;
+      }
+
+      .hero h1 {
+        letter-spacing: -2px;
+      }
+
+      .features {
+        grid-template-columns: 1fr;
+      }
+
+      .about-container {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 75px 5%;
+      }
+    }
+
+    /* Simple fade animation */
+    .fade-up {
+      animation: fadeUp 0.9s ease both;
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="background">
+    <div class="orb one"></div>
+    <div class="orb two"></div>
+    <div class="orb three"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#" class="logo">✨ <span>Sprite</span> Adventures</a>
+
+    <div class="nav-links">
+      <a href="#features">Features</a>
+      <a href="#staff">Staff</a>
+      <a href="#discord" class="nav-discord">Join Discord</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <main>
+    <section class="hero">
+      <div class="hero-content fade-up">
+
+        <div class="badge">
+          🌱 A Growing Gaming Community
+        </div>
+
+        <h1>
+          ✨ Sprite<br>
+          <span>Adventures</span> ✨
+        </h1>
+
+        <p>
+          We are a growing community built on trust, friendship,
+          and nonstop fun. Come hang out, trade sprites, discover
+          gaming news, enter giveaways, and meet awesome people.
+        </p>
+
+        <div class="hero-buttons">
+          <a
+            href="https://discord.gg/spirteadventures"
+            target="_blank"
+            class="button button-primary"
+          >
+            💬 Join Our Discord
+          </a>
+
+          <a href="#features" class="button button-secondary">
+            🌱 Explore Community
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features">
+
+      <div class="section-heading">
+        <div class="small-title">What We Offer</div>
+        <h2>Something for everyone.</h2>
+        <p>
+          Whether you're here to trade, chat, discover news,
+          or simply have fun, Sprite Adventures has something for you.
+        </p>
+      </div>
+
+      <div class="features">
+
+        <div class="feature-card">
+          <div class="feature-icon">🌱</div>
+          <h3>Sprite Trading</h3>
+          <p>
+            Trade, collect, and discover new sprites with other
+            members of the community.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🎮</div>
+          <h3>Chats For All Gamemodes</h3>
+          <p>
+            Talk about your favorite games and connect with people
+            who enjoy the same gamemodes as you.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🎉</div>
+          <h3>Giveaways</h3>
+          <p>
+            Participate in community giveaways and keep an eye out
+            for exciting prizes and events.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🫠</div>
+          <h3>News & Leaks</h3>
+          <p>
+            Stay up to date with gaming news, updates, discoveries,
+            and the latest community leaks.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🥰</div>
+          <h3>Creator Support</h3>
+          <p>
+            We support growing content creators and provide a place
+            where creators can share their work with the community.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">❤️</div>
+          <h3>Friendly Community</h3>
+          <p>
+            Meet new people, make friends, and be part of a community
+            centered around trust and having fun.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Staff / About Me -->
+    <section id="staff">
+
+      <div class="section-heading">
+        <div class="small-title">Meet The Team</div>
+        <h2>Behind Sprite Adventures.</h2>
+        <p>
+          Get to know the people helping build and grow the community.
+        </p>
+      </div>
+
+      <div class="about-container">
+
+        <!-- CHANGE THIS INFORMATION -->
+        <div class="profile-card">
+
+          <div class="avatar">
+            👑
+          </div>
+
+          <h3>NynTailz</h3>
+
+          <div class="role">
+            Founder & Owner
+          </div>
+
+          <p>
+            Hey! I'm the founder of Sprite Adventures.
+            I created this community to bring people together,
+            build a friendly environment, and make gaming more fun.
+          </p>
+
+        </div>
+
+        <div class="about-card">
+
+          <h3>About Me 👋</h3>
+
+          <p>
+            Welcome to Sprite Adventures! I'm the person behind
+            the community and one of the people working to make
+            this server a fun place for everyone.
+          </p>
+
+          <p>
+            My goal is to create a community where people can
+            meet new friends, talk about games, trade sprites,
+            discover new content, and just have a good time.
+          </p>
+          <div class="profile-card">
+
+          <div class="avatar">
+            👑
+          </div>
+
+          <h3>XPLUZOyt</h3>
+
+          <div class="role">
+            Admin/creator of site
+          </div>
+
+          <p>
+            Hey! I'm the Lead Admin and creator of the websute for Sprite Adventures.
+            I do a lot of technical work and look pretty in the discord server,
+            if you see me say free to say wsp I wont bite.
+          </p>
+
+        </div>
+
+        <div class="about-card">
+
+          <h3>About Me 👋</h3>
+
+          <p>
+            Welcome to Sprite Adventures! I'm the person behind
+            the the techical work.
+          </p>
+
+          <p>
+            My goal is to ensure everything runs smoothly and ensure that all the staff and community are getting along
+            with no fights and or arguements.
+          </p>
+
+
+          <ul class="about-list">
+            <li>🌱 Building and growing Sprite Adventures</li>
+            <li>🎮 Passionate about gaming</li>
+            <li>💚 Supporting our community members</li>
+            <li>🎉 Organizing events and giveaways</li>
+            <li>🥰 Supporting upcoming content creators</li>
+          </ul>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Discord -->
+    <section id="discord" class="discord-section">
+
+      <div class="discord-box">
+
+        <h2>Ready to join us? 💚</h2>
+
+        <p>
+          Come hang out with the Sprite Adventures community
+          and become part of the adventure.
+        </p>
+
+        <a
+          href="https://discord.gg/spirteadventures"
+          target="_blank"
+          class="button button-primary"
+        >
+          💬 Join Sprite Adventures
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>
+      © 2026 <span>Sprite Adventures</span>.
+      Built with 💚 by the community.
+    </p>
+  </footer>
+
+</body>
+</html>
