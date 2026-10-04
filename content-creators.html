@@ -998,357 +998,13 @@ footer {
 
     text-align: center;
 
+    color: var(--muted);
+
+    font-size: 0.85rem;
+
     border-top:
         1px solid
-        rgba(57, 255, 136, 0.07);
-
-    color: #64786a;
-
-    font-size: 0.82rem;
-
-}
-
-
-footer span {
-
-    color: var(--green);
-
-}
-
-
-/* =====================================================
-   SCROLL REVEAL
-===================================================== */
-
-.reveal {
-
-    opacity: 0;
-
-    transform:
-        translateY(35px);
-
-    transition:
-
-        opacity 0.8s ease,
-
-        transform 0.8s ease;
-
-}
-
-
-.reveal.active {
-
-    opacity: 1;
-
-    transform:
-        translateY(0);
-
-}
-
-
-/* =====================================================
-   TABLETS
-===================================================== */
-
-@media (max-width: 900px) {
-
-    .creator-grid {
-
-        grid-template-columns:
-            repeat(2, minmax(0, 1fr));
-
-        gap: 18px;
-
-    }
-
-
-    .creator-card {
-
-        padding: 26px;
-
-    }
-
-
-    .creator-top {
-
-        gap: 15px;
-
-    }
-
-
-    .creator-avatar {
-
-        width: 72px;
-        height: 72px;
-
-        flex-basis: 72px;
-
-        font-size: 1.9rem;
-
-    }
-
-
-    .creator-info h3 {
-
-        font-size: 1.15rem;
-
-    }
-
-
-    .creator-role {
-
-        font-size: 0.7rem;
-
-    }
-
-}
-
-
-/* =====================================================
-   MOBILE
-===================================================== */
-
-@media (max-width: 700px) {
-
-    nav {
-
-        padding:
-            14px 5%;
-
-    }
-
-
-    .logo {
-
-        font-size: 1rem;
-
-    }
-
-
-    .nav-links {
-
-        gap: 8px;
-
-    }
-
-
-    .nav-links a:not(.nav-discord) {
-
-        display: none;
-
-    }
-
-
-    .nav-links a.nav-active {
-
-        display: inline-block;
-
-    }
-
-
-    .nav-discord {
-
-        padding:
-            9px 12px;
-
-        font-size:
-            0.75rem !important;
-
-    }
-
-
-    .page-header {
-
-        min-height: 70vh;
-
-        padding:
-            130px 18px 80px;
-
-    }
-
-
-    .page-header h1 {
-
-        font-size:
-            clamp(2.8rem, 15vw, 5rem);
-
-        letter-spacing:
-            -3px;
-
-    }
-
-
-    .page-description {
-
-        font-size:
-            0.95rem;
-
-        line-height:
-            1.7;
-
-    }
-
-
-    section {
-
-        padding:
-            80px 5%;
-
-    }
-
-
-    .creator-grid {
-
-        grid-template-columns:
-            1fr;
-
-        width: 100%;
-
-        gap: 18px;
-
-    }
-
-
-    .creator-card {
-
-        width: 100%;
-
-        padding: 22px;
-
-        border-radius:
-            18px;
-
-    }
-
-
-    .creator-top {
-
-        align-items:
-            center;
-
-        gap: 14px;
-
-        margin-bottom:
-            20px;
-
-    }
-
-
-    .creator-avatar {
-
-        width: 68px;
-        height: 68px;
-
-        flex: 0 0 68px;
-
-        font-size:
-            1.7rem;
-
-    }
-
-
-    .creator-info h3 {
-
-        font-size:
-            1.08rem;
-
-        line-height:
-            1.2;
-
-    }
-
-
-    .creator-role {
-
-        font-size:
-            0.68rem;
-
-        line-height:
-            1.35;
-
-    }
-
-
-    .creator-description {
-
-        font-size:
-            0.88rem;
-
-        line-height:
-            1.7;
-
-        margin-bottom:
-            18px;
-
-    }
-
-
-    .creator-links {
-
-        gap: 7px;
-
-    }
-
-
-    .creator-button {
-
-        padding:
-            8px 10px;
-
-        font-size:
-            0.65rem;
-
-    }
-
-
-    .support-box {
-
-        padding:
-            55px 20px;
-
-    }
-
-}
-
-
-/* =====================================================
-   SMALL PHONES
-===================================================== */
-
-@media (max-width: 420px) {
-
-    .creator-top {
-
-        align-items:
-            flex-start;
-
-    }
-
-
-    .creator-avatar {
-
-        width: 60px;
-        height: 60px;
-
-        flex-basis: 60px;
-
-    }
-
-
-    .creator-info h3 {
-
-        font-size:
-            1rem;
-
-    }
-
-
-    .creator-role {
-
-        font-size:
-            0.62rem;
-
-    }
+        var(--border);
 
 }
 
@@ -1356,81 +1012,54 @@ footer span {
 
 </head>
 
-
 <body>
 
 
-<canvas id="particles"></canvas>
-
+<!-- =====================================================
+     GLOW BACKGROUND ELEMENTS
+===================================================== -->
 
 <div class="background-glow glow-one"></div>
-
 <div class="background-glow glow-two"></div>
+<div id="particles"></div>
 
 
 <!-- =====================================================
      NAVIGATION
 ===================================================== -->
 
-<nav id="navbar">
+<nav>
 
-
-    <a href="index.html" class="logo">
+    <a href="#" class="logo">
 
         ✨
-
         <span class="logo-highlight">
-            Sprite
+            Sprite Adventures
         </span>
-
-        Adventures
 
     </a>
 
-
     <div class="nav-links">
 
-
-        <a href="index.html">
-            Home
+        <a href="#creators" class="nav-active">
+            Creators
         </a>
 
-
-        <a href="index.html#features">
-            Features
+        <a href="#">
+            Games
         </a>
 
-
-        <a href="index.html#staff">
-            Staff
+        <a href="#">
+            Community
         </a>
 
-
-        <a
-            href="content-creators.html"
-            class="nav-active"
-        >
-            Content Creators
+        <a href="#" class="nav-discord">
+            Discord
         </a>
-
-
-        <a
-            href="https://discord.gg/spirteadventures"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="nav-discord"
-        >
-            🎮 Discord
-        </a>
-
 
     </div>
 
-
 </nav>
-
-
-<main>
 
 
 <!-- =====================================================
@@ -1587,263 +1216,64 @@ footer span {
 
 
         <!-- =================================================
-             CREATOR 2
+             CREATOR 2 — K1NG1NFINITY
         ================================================== -->
-
-        <div class="creator-card reveal">
-
-
-            <div class="creator-top">
-
-
-                <div class="creator-avatar">
-                    🎬
-                </div>
-
-
-                <div class="creator-info">
-
-                    <h3>
-                        Creator Name
-                    </h3>
-
-                    <div class="creator-role">
-                        CONTENT CREATOR
-                    </div>
-
-                </div>
-
-
-            </div>
-
-
-            <p class="creator-description">
-
-                Add another creator here. You can
-                describe their content, personality,
-                favorite games, or anything else you
-                want visitors to know.
-
-            </p>
-
-
-            <div class="creator-links">
-
-
-                <a
-                    href="#"
-                    class="creator-button"
-                >
-                    🎥 YouTube
-                </a>
-
-
-                <a
-                    href="#"
-                    class="creator-button"
-                >
-                    🎵 TikTok
-                </a>
-
-
-                <a
-                    href="#"
-                    class="creator-button"
-                >
-                    💜 Twitch
-                </a>
-
-
-            </div>
-
-
-        </div>
-
-
-
-        <!-- =================================================
-             CREATOR 3
-        ================================================== -->
-
-        <div class="creator-card reveal">
-
-
-            <div class="creator-top">
-
-
-                <div class="creator-avatar">
-                    ⭐
-                </div>
-
-
-                <div class="creator-info">
-
-                    <h3>
-                        Creator Name
-                    </h3>
-
-                    <div class="creator-role">
-                        CONTENT CREATOR
-                    </div>
-
-                </div>
-
-
-            </div>
-
-
-            <p class="creator-description">
-
-                Add another creator card here whenever
-                you have another member of the community
-                you want to feature.
-
-            </p>
-
-
-            <div class="creator-links">
-
-
-                <a
-                    href="#"
-                    class="creator-button"
-                >
-                    🎥 YouTube
-                </a>
-
-
-                <a
-                    href="#"
-                    class="creator-button"
-                >
-                    🎵 TikTok
-                </a>
-
-
-                <a
-                    href="#"
-                    class="creator-button"
-                >
-                    💜 Twitch
-                </a>
-
-
-            </div>
-
-
-        </div>
-
-
-
-        <!-- =================================================
-             CREATOR 4
-        ================================================== -->
-
-        <div class="creator-card reveal">
-
-
-            <div class="creator-top">
-
-
-                <div class="creator-avatar">
-                    🌟
-                </div>
-
-
-                <div class="creator-info">
-
-                    <h3>
-                        Creator Name
-                    </h3>
-
-                    <div class="creator-role">
-                        CONTENT CREATOR
-                    </div>
-
-                </div>
-
-
-            </div>
-
-
-            <p class="creator-description">
-
-                Add more creators by copying one of the
-                creator cards and changing the information.
-
-            </p>
-
-
-            <div class="creator-links">
-
-
-                <a
-                    href="#"
-                    class="creator-button"
-                >
-                    🎥 YouTube
-                </a>
-
-
-                <a
-                    href="#"
-                    class="creator-button"
-                >
-                    🎵 TikTok
-                </a>
-
-
-                <a
-                    href="#"
-                    class="creator-button"
-                >
-                    💜 Twitch
-                </a>
-
-
-            </div>
-
-
-        </div>
-
-
-    </div>
-
-
-</section>
-
-
-
-<!-- =====================================================
-     CREATOR SUPPORT
-===================================================== -->
-
-<section class="creator-support">
-
-
-    <div class="support-box reveal">
-
-
-        <h2>
-            Want to become a creator? 🎥
-        </h2>
-
-
-        <p>
-
-            Join Sprite Adventures and become part
-            of our growing gaming community.
-
-        </p>
-
 
         <a
-            href="https://discord.gg/spirteadventures"
+            href="https://www.twitch.tv/k1ng1nfinity"
             target="_blank"
             rel="noopener noreferrer"
-            class="button button-primary"
+            class="creator-card-link"
         >
-            🎮 Join Sprite Adventures
+
+            <div class="creator-card reveal">
+
+
+                <div class="creator-top">
+
+
+                    <div class="creator-avatar">
+                        👑
+                    </div>
+
+
+                    <div class="creator-info">
+
+                        <h3>
+                            K1NG1NFINITY
+                        </h3>
+
+                        <div class="creator-role">
+                            CONTENT CREATOR
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+                <p class="creator-description">
+
+                    K1NG1NFINITY is a content creator and member
+                    of the Sprite Adventures community. Check
+                    out their content and follow their journey
+                    through the link below.
+
+                </p>
+
+
+                <div class="creator-links">
+
+                    <span class="creator-button">
+                        🔗 Twitch
+                    </span>
+
+                </div>
+
+
+            </div>
+
         </a>
 
 
@@ -1853,8 +1283,33 @@ footer span {
 </section>
 
 
-</main>
+<!-- =====================================================
+     CREATOR SUPPORT
+===================================================== -->
 
+<section class="creator-support">
+
+    <div class="support-box">
+
+        <h2>
+            Support Our Creators
+        </h2>
+
+        <p>
+
+            Like the content? Share it with friends,
+            follow them, and help support the Sprite
+            Adventures community!
+
+        </p>
+
+        <a href="#" class="button button-primary">
+            🎮 Join Our Discord
+        </a>
+
+    </div>
+
+</section>
 
 
 <!-- =====================================================
@@ -1864,428 +1319,10 @@ footer span {
 <footer>
 
     <p>
-
-        © 2026
-
-        <span>
-            Sprite Adventures
-        </span>
-
-        🤝 Built with 🤖 by the community.
-
+        © 2024 Sprite Adventures. All rights reserved.
     </p>
 
 </footer>
-
-
-
-<!-- =====================================================
-     JAVASCRIPT
-===================================================== -->
-
-<script>
-
-
-/* =====================================================
-   NAVBAR SCROLL EFFECT
-===================================================== */
-
-const navbar =
-    document.getElementById("navbar");
-
-
-window.addEventListener("scroll", () => {
-
-
-    if (window.scrollY > 30) {
-
-        navbar.classList.add("scrolled");
-
-    } else {
-
-        navbar.classList.remove("scrolled");
-
-    }
-
-});
-
-
-
-/* =====================================================
-   SCROLL REVEAL
-===================================================== */
-
-const revealElements =
-    document.querySelectorAll(".reveal");
-
-
-const revealObserver =
-    new IntersectionObserver(
-
-        entries => {
-
-
-            entries.forEach(entry => {
-
-
-                if (entry.isIntersecting) {
-
-
-                    entry.target.classList.add(
-                        "active"
-                    );
-
-
-                    revealObserver.unobserve(
-                        entry.target
-                    );
-
-
-                }
-
-            });
-
-
-        },
-
-        {
-            threshold: 0.12
-        }
-
-    );
-
-
-revealElements.forEach(element => {
-
-    revealObserver.observe(element);
-
-});
-
-
-
-/* =====================================================
-   PARTICLE BACKGROUND
-===================================================== */
-
-const canvas =
-    document.getElementById("particles");
-
-
-const ctx =
-    canvas.getContext("2d");
-
-
-let particles = [];
-
-let width;
-
-let height;
-
-
-
-function resizeCanvas() {
-
-    width =
-        canvas.width =
-        window.innerWidth;
-
-
-    height =
-        canvas.height =
-        window.innerHeight;
-
-}
-
-
-resizeCanvas();
-
-
-window.addEventListener(
-    "resize",
-    resizeCanvas
-);
-
-
-
-/* =====================================================
-   PARTICLE CLASS
-===================================================== */
-
-class Particle {
-
-
-    constructor() {
-
-
-        this.x =
-            Math.random() * width;
-
-
-        this.y =
-            Math.random() * height;
-
-
-        this.size =
-            Math.random() * 1.8 + 0.4;
-
-
-        this.speedX =
-            (Math.random() - 0.5) * 0.25;
-
-
-        this.speedY =
-            (Math.random() - 0.5) * 0.25;
-
-
-        this.opacity =
-            Math.random() * 0.55 + 0.15;
-
-
-    }
-
-
-    update() {
-
-
-        this.x +=
-            this.speedX;
-
-
-        this.y +=
-            this.speedY;
-
-
-        if (this.x < 0) {
-
-            this.x = width;
-
-        }
-
-
-        if (this.x > width) {
-
-            this.x = 0;
-
-        }
-
-
-        if (this.y < 0) {
-
-            this.y = height;
-
-        }
-
-
-        if (this.y > height) {
-
-            this.y = 0;
-
-        }
-
-    }
-
-
-    draw() {
-
-
-        ctx.beginPath();
-
-
-        ctx.arc(
-
-            this.x,
-
-            this.y,
-
-            this.size,
-
-            0,
-
-            Math.PI * 2
-
-        );
-
-
-        ctx.fillStyle =
-            `rgba(57,255,136,${this.opacity})`;
-
-
-        ctx.fill();
-
-    }
-
-}
-
-
-
-/* =====================================================
-   CREATE PARTICLES
-===================================================== */
-
-function createParticles() {
-
-
-    particles = [];
-
-
-    const amount =
-        window.innerWidth < 700
-            ? 45
-            : 90;
-
-
-    for (
-        let i = 0;
-        i < amount;
-        i++
-    ) {
-
-
-        particles.push(
-            new Particle()
-        );
-
-    }
-
-}
-
-
-createParticles();
-
-
-
-/* =====================================================
-   CONNECT PARTICLES
-===================================================== */
-
-function connectParticles() {
-
-
-    for (
-        let i = 0;
-        i < particles.length;
-        i++
-    ) {
-
-
-        for (
-            let j = i + 1;
-            j < particles.length;
-            j++
-        ) {
-
-
-            const dx =
-                particles[i].x -
-                particles[j].x;
-
-
-            const dy =
-                particles[i].y -
-                particles[j].y;
-
-
-            const distance =
-                Math.sqrt(
-                    dx * dx +
-                    dy * dy
-                );
-
-
-            if (distance < 120) {
-
-
-                const opacity =
-                    0.07 *
-                    (1 - distance / 120);
-
-
-                ctx.beginPath();
-
-
-                ctx.moveTo(
-                    particles[i].x,
-                    particles[i].y
-                );
-
-
-                ctx.lineTo(
-                    particles[j].x,
-                    particles[j].y
-                );
-
-
-                ctx.strokeStyle =
-                    `rgba(57,255,136,${opacity})`;
-
-
-                ctx.lineWidth = 0.5;
-
-
-                ctx.stroke();
-
-            }
-
-        }
-
-    }
-
-}
-
-
-
-/* =====================================================
-   ANIMATE PARTICLES
-===================================================== */
-
-function animateParticles() {
-
-
-    ctx.clearRect(
-
-        0,
-
-        0,
-
-        width,
-
-        height
-
-    );
-
-
-    particles.forEach(
-        particle => {
-
-            particle.update();
-
-            particle.draw();
-
-        }
-    );
-
-
-    connectParticles();
-
-
-    requestAnimationFrame(
-        animateParticles
-    );
-
-}
-
-
-animateParticles();
-
-
-
-window.addEventListener(
-    "resize",
-    createParticles
-);
-
-
-</script>
 
 
 </body>
