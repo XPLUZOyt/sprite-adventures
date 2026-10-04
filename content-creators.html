@@ -1008,272 +1008,6 @@ footer {
 
 }
 
-footer span {
-
-    color: var(--green);
-
-}
-
-
-/* =====================================================
-   SCROLL REVEAL
-===================================================== */
-
-.reveal {
-
-    opacity: 0;
-
-    transform:
-        translateY(35px);
-
-    transition:
-
-        opacity 0.8s ease,
-
-        transform 0.8s ease;
-
-}
-
-
-.reveal.active {
-
-    opacity: 1;
-
-    transform:
-        translateY(0);
-
-}
-
-
-/* =====================================================
-   TABLETS
-===================================================== */
-
-@media (max-width: 900px) {
-
-    .creator-grid {
-
-        grid-template-columns:
-            repeat(2, minmax(0, 1fr));
-
-        gap: 18px;
-
-    }
-
-
-    .creator-card {
-
-        padding: 26px;
-
-    }
-
-
-    .creator-top {
-
-        gap: 15px;
-
-    }
-
-
-    .creator-avatar {
-
-        width: 72px;
-        height: 72px;
-
-        flex-basis: 72px;
-
-        font-size: 1.9rem;
-
-    }
-
-
-    .creator-info h3 {
-
-        font-size: 1.15rem;
-
-    }
-
-
-    .creator-role {
-
-        font-size: 0.7rem;
-
-    }
-
-}
-
-
-/* =====================================================
-   MOBILE
-===================================================== */
-
-@media (max-width: 700px) {
-
-    nav {
-
-        padding:
-            14px 5%;
-
-    }
-
-
-    .logo {
-
-        font-size: 1rem;
-
-    }
-
-
-    .nav-links {
-
-        gap: 8px;
-
-    }
-
-
-    .nav-links a:not(.nav-discord) {
-
-        display: none;
-
-    }
-
-
-    .nav-links a.nav-active {
-
-        display: inline-block;
-
-    }
-
-
-    .nav-discord {
-
-        padding:
-            9px 12px;
-
-        font-size:
-            0.75rem !important;
-
-    }
-
-
-    .page-header {
-
-        min-height: 70vh;
-
-        padding:
-            130px 18px 80px;
-
-    }
-
-
-    .page-header h1 {
-
-        font-size:
-            clamp(2.8rem, 15vw, 5rem);
-
-        letter-spacing:
-            -3px;
-
-    }
-
-
-    .page-description {
-
-        font-size:
-            0.95rem;
-
-        line-height:
-            1.7;
-
-    }
-
-
-    section {
-
-        padding:
-            80px 5%;
-
-    }
-
-
-    .creator-grid {
-
-        grid-template-columns:
-            1fr;
-
-        width: 100%;
-
-        gap: 18px;
-
-    }
-
-
-    .creator-card {
-
-        width: 100%;
-
-        padding: 22px;
-
-        border-radius:
-            18px;
-
-    }
-
-
-    .creator-top {
-
-        align-items:
-            center;
-
-        gap: 14px;
-
-        margin-bottom:
-            20px;
-
-    }
-
-
-    .creator-avatar {
-
-        width: 68px;
-        height: 68px;
-
-        flex: 0 0 68px;
-
-        font-size:
-            1.7rem;
-
-    }
-
-
-    .creator-info h3 {
-
-        font-size: 1rem;
-
-    }
-
-
-    .creator-description {
-
-        font-size: 0.85rem;
-
-        line-height: 1.6;
-
-        margin-bottom: 18px;
-
-    }
-
-
-    .creator-button {
-
-        padding: 8px 11px;
-
-        font-size: 0.65rem;
-
-    }
-
-}
-
 </style>
 
 </head>
@@ -1485,67 +1219,68 @@ footer span {
              CREATOR 2 — K1NG1NFINITY
         ================================================== -->
 
-        <div class="creator-card reveal">
+        <a
+            href="https://www.twitch.tv/k1ng1nfinity"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="creator-card-link"
+        >
 
-            <div class="creator-top">
+            <div class="creator-card reveal">
 
-                <div class="creator-avatar">
-                    👑
-                </div>
 
-                <div class="creator-info">
+                <div class="creator-top">
 
-                    <h3>
-                        K1NG1NFINITY
-                    </h3>
 
-                    <div class="creator-role">
-                        CONTENT CREATOR
+                    <div class="creator-avatar">
+                        👑
                     </div>
 
+
+                    <div class="creator-info">
+
+                        <h3>
+                            K1NG1NFINITY
+                        </h3>
+
+                        <div class="creator-role">
+                            CONTENT CREATOR
+                        </div>
+
+                    </div>
+
+
                 </div>
 
-            </div>
 
-            <p class="creator-description">
+                <p class="creator-description">
 
-                K1NG1NFINITY is a content creator and member
-                of the Sprite Adventures community. Check
-                out their content and follow their journey
-                through the link below.
+                    K1NG1NFINITY is a content creator and member
+                    of the Sprite Adventures community. Check
+                    out their content and follow their journey
+                    through the link below.
 
-            </p>
+                </p>
 
-            <div class="creator-links">
 
-                <a
-                    href="https://www.twitch.tv/k1ng1nfinity"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="creator-button"
-                >
-                    🔗 Twitch
-                </a>
+                <div class="creator-links">
 
-                <a
-                    href="https://www.youtube.com/@k1nginfin1ty"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="creator-button"
-                >
-                    📺 YouTube
-                </a>
+                    <span class="creator-button">
+                        🔗 Twitch
+                    </span>
+
+                </div>
+
 
             </div>
 
-        </div>
+        </a>
 
 
     </div>
 
 
 </section>
-
 
 
 <!-- =====================================================
