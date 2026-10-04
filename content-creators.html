@@ -1009,6 +1009,58 @@ footer {
 }
 
 
+/* =====================================================
+    RESPONSIVE
+===================================================== */
+
+@media (max-width: 768px) {
+
+    nav {
+
+        padding: 15px 5%;
+
+    }
+
+    .logo {
+        font-size: 1rem;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .nav-links a:not(.nav-discord) {
+        font-size: 0.8rem;
+    }
+
+    .nav-discord {
+        padding: 9px 12px;
+        font-size: 0.75rem !important;
+    }
+
+    .page-header {
+        padding: 140px 20px 70px;
+    }
+
+    .page-header h1 {
+        font-size: clamp(2rem, 7vw, 4.5rem);
+        letter-spacing: -2px;
+    }
+
+    section {
+        padding: 70px 5%;
+    }
+
+    .creator-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .support-box {
+        padding: 55px 20px;
+    }
+
+}
+
 </style>
 
 </head>
@@ -1031,7 +1083,7 @@ footer {
 
 <nav>
 
-    <a href="#" class="logo">
+    <a href="index.html" class="logo">
 
         ✨
         <span class="logo-highlight">
@@ -1042,16 +1094,12 @@ footer {
 
     <div class="nav-links">
 
+        <a href="index.html">
+            Main
+        </a>
+
         <a href="#creators" class="nav-active">
             Creators
-        </a>
-
-        <a href="#">
-            Games
-        </a>
-
-        <a href="#">
-            Community
         </a>
 
         <a
